@@ -1,13 +1,12 @@
 package webapp;
 
-import javax.enterprise.context.SessionScoped;
-import javax.inject.Named;
-import java.io.Serializable;
+import javax.persistence.Entity;
+import javax.persistence.Id;
 
-@Named
-@SessionScoped
-public class ExampleBean implements Serializable {
+@Entity
+public class UserEntity {
 
+    @Id
     private String login;
     private String password;
 
@@ -26,7 +25,5 @@ public class ExampleBean implements Serializable {
     public void setPassword(String password) {
         this.password = password;
     }
-    public void doLogin() {
 
-    }
 }

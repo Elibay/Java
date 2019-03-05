@@ -1,2 +1,3 @@
-webapp\ExampleBean.class
-webapp\HelloServlet.class
+webapp\ExampleEJB.class
+webapp\ExampleCDI.class
+webapp\UserEntity.class
